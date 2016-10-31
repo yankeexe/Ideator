@@ -5,6 +5,7 @@ default: &default
       username: username
       password: password
       host:     <%= ENV['IP'] %>
+   
 
 development:
   <<: *default
