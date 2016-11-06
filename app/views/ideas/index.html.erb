@@ -28,14 +28,10 @@
   </div>
 </div>
 
-<%= simple_form_for Idea.new do |f| %>
-  <%= f.input :description %>
-  <%= f.input :author %>
-  <%= f.submit 'Submit', class: 'btn btn-info btn-md' %>
-<% end %>
+
 <% @ideas.each do |idea| %>
   <div class="panel panel-default">
-    <div class="panel-body">
+    <div class="panel-body", background-color=>
       <blockquote>
         <p><%= idea.description %></p>
         <small>by <%= idea.author %></small>
@@ -43,8 +39,15 @@
       <div class="btn-group" role="group">
       <%= link_to 'Delete', idea_path(idea), method: :delete, class: 'btn btn-danger btn-sm',data: {confirm: "Are you sure?"} %>
       <%= link_to'Revise', edit_idea_path(idea), class: 'btn btn-success btn-sm' %>
+      
       </div>
+        
     </div>
   </div>
+  <div class = "text-center">
+  <%= will_paginate @ideas %>
+</div>
+
 <% end %>
+
 
