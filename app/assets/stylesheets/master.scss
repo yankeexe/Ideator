@@ -1,54 +1,78 @@
 $footer-height:45px;
 $main-blue: #337ab7;  
-$primary-font: 'Open Sans', sans serif;
-$secondary-font:'Dosis', sans-serif;
-.navbar-default{
-    font-family:$secondary-font;
-     background-color:teal;
- 
-    
-    
-  
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font:'Bangers', cursive;
+
+ .navbar-collapse.collapse {
+   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  width:100%;
+  }
+
+.navbar-header{
+
 }
 
 html,body{
     font-family:$primary-font;
-    color: #FFFFFF;
-    font-weight: bold;
-     
-   
-}
-.navbar-default .navbar-brand{
-    font-weight:100;
-    font-size: 30px;
-    letter-spacing:5px;
+    color: white;
+    font-weight:bold;
     
+    height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  }
+  
+  
+label{
+  display: block;
+  
 }
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
 /* Wrapper for page content to push down footer */
-#wrap {
+  #wrap {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
   margin: 0 auto -45px;
   /* Pad bottom by footer height */
   padding: 0 0 45px;
-}
+  }
+  
+.panel-body{
+  background-color:#CFD8DC;
+  
+  }
 
 /* Set the fixed height of the footer here */
 .footer {
   height: footer-height;
-}
-.panel-body{
-  background-color:#CFD8DC;
-}
-.navbar-default .navbar-header{
-   font-weight: bold;
-   font-size:50px;
+  }
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Bangers", Cursive;
+  letter-spacing: 3px;
 }
 
+.modal-body{
+  color:black;
+}
+
+
+.modal-title{
+  color:teal;
+  font-weight:bold;
+   font-family: "Bangers", Cursive;
+   letter-spacing:3px;
+}
+
+h1, .h1 {
+    
+    color: black;
+}
+
+input, button, select, textarea {
+
+    color: black;
+}
